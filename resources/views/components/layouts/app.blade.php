@@ -46,8 +46,8 @@
             @include('partials.footer')
         </div>
 
-        <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
-        <script src="{{ asset('assets/js/plugins.bundle.js') }}"></script>
+        {{-- <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script> --}}
+        {{-- <script src="{{ asset('assets/js/plugins.bundle.js') }}"></script> --}}
         @vite(['resources/js/app.js'])
         @livewireScriptConfig
         @stack('scripts')

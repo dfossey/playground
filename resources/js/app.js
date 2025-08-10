@@ -1,4 +1,5 @@
 import { Livewire, Alpine } from '../../vendor/livewire/livewire/dist/livewire.esm';
-// import './bootstrap';
+import * as bootstrap from 'bootstrap';
 
-Livewire.start()
+Livewire.start();
+window.bootstrap = bootstrap;
