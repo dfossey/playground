@@ -9,11 +9,29 @@
     </div>
 
     <div class="d-flex flex-column flex-grow-1 p-9 pt-5">
-        <x-plugins.tooltip placement="right" content="Link" class="mb-7">
-            <x-partials.icon icon="bi-grid-1x2" class="fs-2 text-hover-primary" />
+        <x-plugins.tooltip placement="right" content="Home" class="mb-7">
+            <a href="{{ route('home') }}">
+                <x-partials.icon
+                    icon="bi-grid-1x2"
+                    :class="(Route::is('home') ? 'text-primary' : '') . ' fs-2 text-hover-primary'"
+                />
+            </a>
         </x-plugins.tooltip>
-        <x-plugins.tooltip placement="right" content="Link">
-            <x-partials.icon icon="bi-columns-gap" class="fs-2 text-hover-primary" />
+        <x-plugins.tooltip placement="right" content="Components" class="mb-7">
+            <a href="https://preview.keenthemes.com/html/craft/docs/base/utilities" target="_blank">
+                <x-partials.icon
+                    icon="bi-columns-gap"
+                    class="fs-2 text-hover-primary"
+                />
+            </a>
+        </x-plugins.tooltip>
+        <x-plugins.tooltip placement="right" content="Demo">
+            <a href="https://preview.keenthemes.com/craft/index.html" target="_blank">
+                <x-partials.icon
+                    icon="bi-layout-sidebar"
+                    class="fs-2 text-hover-primary"
+                />
+            </a>
         </x-plugins.tooltip>
     </div>
 </div>
