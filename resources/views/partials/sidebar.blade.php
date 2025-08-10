@@ -47,7 +47,7 @@
                 data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer"
             >
                 <x-layouts.sidebar_accordion
-                    icon="ki-element-11"
+                    icon="bi-grid-1x2"
                     label="Accordion"
                     :routes="[
                         'home' => 'Home',
@@ -64,7 +64,7 @@
                 </div> --}}
 
                 <x-layouts.sidebar_item
-                    icon="ki-row-vertical"
+                    icon="bi-columns-gap"
                     label="Craft components"
                     href="https://preview.keenthemes.com/html/craft/docs/base/utilities"
                     target="_blank"

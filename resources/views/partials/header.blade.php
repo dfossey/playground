@@ -10,12 +10,12 @@
             data-kt-menu-placement="bottom-end"
         >
             <x-partials.icon
-                icon="ki-night-day"
-                class="theme-light-show fs-1"
+                icon="bi-brightness-high"
+                class="theme-light-show fs-2"
             />
             <x-partials.icon
-                icon="ki-moon"
-                class="theme-dark-show fs-1"
+                icon="bi-moon-stars"
+                class="theme-dark-show fs-2"
             />
         </a>
 
@@ -35,8 +35,8 @@
                 >
                     <span class="menu-icon" data-kt-element="icon">
                         <x-partials.icon
-                            icon="ki-night-day"
-                            class="fs-2"
+                            icon="bi-brightness-high"
+                            class="fs-4"
                         />
                     </span>
                     <span class="menu-title">
@@ -54,31 +54,12 @@
                 >
                     <span class="menu-icon" data-kt-element="icon">
                         <x-partials.icon
-                            icon="ki-moon"
-                            class="fs-2"
+                            icon="bi-moon-stars"
+                            class="fs-4"
                         />
                     </span>
                     <span class="menu-title">
                         Dark
-                    </span>
-                </a>
-            </div>
-
-            <div class="menu-item px-3 my-0">
-                <a
-                    href="#"
-                    class="menu-link px-3 py-2"
-                    data-kt-element="mode"
-                    data-kt-value="system"
-                >
-                    <span class="menu-icon" data-kt-element="icon">
-                        <x-partials.icon
-                            icon="ki-screen"
-                            class="fs-2"
-                        />
-                    </span>
-                    <span class="menu-title">
-                        System
                     </span>
                 </a>
             </div>

@@ -2,7 +2,7 @@
     title="Home"
     description="Home"
 >
-    <div class="container p-8">
+    <div class="container px-8">
         @php
             $colors = [
                 'primary',
@@ -26,7 +26,7 @@
 
         @foreach ($components as $type => $class)
             <x-partials.card>
-                <div class="d-flex justify-content-between flex-wrap {{ !in_array($class, $noLight) ? 'mb-6' : '' }}">
+                <div class="d-flex justify-content-between flex-wrap">
                     @foreach ($colors as $color)
                         <x-plugins.tooltip
                             :content="$class . '-' . $color"
@@ -40,7 +40,7 @@
                 </div>
 
                 @if (!in_array($class, $noLight))
-                    <div class="d-flex justify-content-between flex-wrap">
+                    <div class="d-flex justify-content-between flex-wrap mt-6">
                         @foreach ($colors as $color)
                             <x-plugins.tooltip
                                 :content="$class . '-light-' . $color"
