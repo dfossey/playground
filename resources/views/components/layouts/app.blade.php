@@ -29,7 +29,9 @@
 
     <body
         class="d-flex flex-row"
-        data-kt-aside-minimize="off"
+        @if (($_COOKIE['data-kt-aside-minimize'] ?? null) === 'on')
+            data-kt-aside-minimize="on"
+        @endif
     >
         @include('partials.sidebar')
 
