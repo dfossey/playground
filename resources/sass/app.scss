@@ -1,11 +1,11 @@
-@import 'variables';
+@use 'variables';
 // @import 'bootstrap/scss/bootstrap';
 
 /**
  *  Craft theme (Bootstrap included)
  *  https://preview.keenthemes.com/craft/index.html
  */
-@import 'theme/craft';
-@import 'theme/plugins/global/plugins.bundle.css';
+@use 'theme/craft';
+@use 'theme/plugins/global/plugins.bundle.css';
 
-@import 'base/font';
+@use 'base/font';
