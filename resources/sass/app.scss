@@ -1,8 +1,9 @@
-// Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
-
-// Variables
 @import 'variables';
 
-// Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+@import 'base/font';
+
+// https://preview.keenthemes.com/craft/index.html
+@import 'theme/craft';
+@import 'theme/plugins/global/plugins.bundle.css';

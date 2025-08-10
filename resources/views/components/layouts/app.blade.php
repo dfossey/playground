@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="dark">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,18 +22,28 @@
         <link rel="icon" sizes="512x512" href="{{ asset('assets/images/favicon/favicon-512x512.png') }}" />
         <link rel="apple-touch-icon" href="{{ asset('assets/images/favicon/apple-touch-icon.png')}}" /> --}}
 
-        {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="{{ url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap') }}"> --}}
-
         @vite(['resources/sass/app.scss'])
         @stack('styles')
         @livewireStyles
     </head>
 
-    <body class="bg-dark text-white">
-        {{ $slot }}
+    <body
+        class="d-flex flex-row"
+        data-kt-aside-minimize="off"
+    >
+        @include('partials.sidebar')
 
+        <div class="wrapper d-flex flex-column flex-row-fluid">
+            @include('partials.header')
+
+            <div class="content d-flex flex-column flex-column-fluid mb-0">
+                {{ $slot }}
+            </div>
+
+            @include('partials.footer')
+        </div>
+
+        <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
         @vite(['resources/js/app.js'])
         @livewireScriptConfig
         @stack('scripts')
