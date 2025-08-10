@@ -23,12 +23,11 @@
             <i class="ki-duotone ki-black-left-line fs-1 rotate-180">
                 <span class="path1"></span>
                 <span class="path2"></span>
-                >
             </i>
+            <span class="ms-4 text-muted fw-bold">
+                Logo
+            </span>
         </div>
-        <a href="#" class="text-muted-fw-bold">
-            Logo
-        </a>
     </div>
 
     <div class="aside-menu flex-column-fluid ps-3 pe-1">
