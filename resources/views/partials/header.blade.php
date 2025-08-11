@@ -1,7 +1,7 @@
 <div class="header px-8 py-2 align-items-center h-60px">
     <div
         class="btn d-flex d-lg-none bg-hover-light-secondary text-hover-primary
-        w-45px h-45px align-items-center justify-content-center"
+        px-3 h-45px align-items-center justify-content-center text-gray-600"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#sidebarOffcanvas"
@@ -11,6 +11,10 @@
             icon="bi-list"
             class="fs-1 p-0"
         />
+
+        <span class="text-inherit ms-4 fs-6 fw-bold">
+            Playground
+        </span>
     </div>
 
     {{-- Theme menu --}}

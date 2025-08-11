@@ -1,14 +1,14 @@
 <div class="aside aside-default d-flex">
-    <div class="aside-logo flex-column-auto p-lg-5 pt-lg-7 h-60px">
+    <div class="aside-logo flex-column-auto p-lg-5 pt-lg-7 h-60px overflow-flow">
         <div
-            class="btn btn-icon w-auto ps-0 btn-active-color-primary d-none d-lg-inline-flex h-auto sidebar-toggler"
+            class="btn btn-icon w-auto ps-0 btn-active-color-primary d-none d-lg-inline-flex h-auto sidebar-item bg-transparent"
             x-on:click="toggleSidebar()"
             x-data
         >
             <x-partials.icon icon="bi-list" class="fs-1 ms-1" />
-            {{-- <span class="ms-4 text-muted fw-bold">
-                Logo
-            </span> --}}
+            <span class="ms-4 fs-6 sidebar-label fw-bold">
+                Playground
+            </span>
         </div>
     </div>
 
@@ -33,7 +33,7 @@
         </div>
 
         <div class="offcanvas-body d-flex flex-column flex-grow-1 sidebar-content px-3 py-7 py-lg-2 scrollbar">
-            @for($i = 1; $i <= 20; $i++)
+            @for($i = 1; $i <= 10; $i++)
                 <x-plugins.tooltip
                     placement="right"
                     content="My awesome demo label"
@@ -55,23 +55,23 @@
 
             <x-plugins.tooltip
                 placement="right"
-                content="Demo preview"
+                content="Craft components"
                 tooltip-class="sidebar-tooltip"
             >
-                <a href="https://preview.keenthemes.com/html/craft/docs/base/utilities" target="_blank" class="sidebar-item">
+                <a href="https://preview.keenthemes.com/html/craft/docs/index" target="_blank" class="sidebar-item">
                     <x-partials.icon
                         icon="bi-columns-gap"
                         class="fs-2"
                     />
                     <span class="sidebar-label">
-                        Demo preview
+                        Craft components
                     </span>
                 </a>
             </x-plugins.tooltip>
 
             <x-plugins.tooltip
                 placement="right"
-                content="Craft components"
+                content="Demo preview"
                 tooltip-class="sidebar-tooltip"
             >
                 <a href="https://preview.keenthemes.com/craft/index.html" target="_blank" class="sidebar-item">
@@ -80,7 +80,7 @@
                         class="fs-2"
                     />
                     <span class="sidebar-label">
-                        Craft components
+                        Demo preview
                     </span>
                 </a>
             </x-plugins.tooltip>
