@@ -39,7 +39,7 @@
     body[data-kt-aside-minimize=on] {
         .sidebar-content {
             max-width: 70px;
-            overflow: clip;
+            overflow-x: clip;
         }
 
         .sidebar-tooltip {

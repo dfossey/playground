@@ -1,4 +1,4 @@
-<div class="header px-8 py-2 h-auto align-items-center">
+<div class="header px-8 py-2 align-items-center h-60px">
     <div
         class="btn d-flex d-lg-none bg-hover-light-secondary text-hover-primary
         w-45px h-45px align-items-center justify-content-center"
