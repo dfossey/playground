@@ -29,7 +29,7 @@
     </head>
 
     <body
-        class="d-flex flex-row"
+        class="d-flex flex-row scrollbar"
         data-kt-aside-minimize="{{ $_COOKIE['data-kt-aside-minimize'] ?? 'off' }}"
     >
         @include('partials.sidebar')

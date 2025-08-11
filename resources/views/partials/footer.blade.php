@@ -1,3 +1,3 @@
-<div class="footer p-8 text-end">
-    <div class="text-muted fw-bold">Footer</div>
+<div class="footer d-flex align-items-center h-60px px-8">
+    <div class="ms-auto text-muted fw-bold">Footer</div>
 </div>
