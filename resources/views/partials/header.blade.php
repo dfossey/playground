@@ -14,7 +14,10 @@
             />
         </x-slot:label>
 
-        <button class="btn btn-active-light-primary text-start fs-7 py-3 px-4 mb-2 text-gray-600">
+        <button
+            class="btn btn-active-light-primary text-start fs-7 py-3 px-4 mb-2 text-gray-600"
+            x-on:click="setAppTheme('light')"
+        >
             <x-partials.icon
                 icon="bi-brightness-high"
                 class="text-inherit fs-4 me-2"
@@ -22,7 +25,10 @@
             Light
         </button>
 
-        <button class="btn btn-active-light-primary text-start fs-7 py-3 px-4 text-gray-600">
+        <button
+            class="btn btn-active-light-primary text-start fs-7 py-3 px-4 text-gray-600"
+            x-on:click="setAppTheme('dark')"
+        >
             <x-partials.icon
                 icon="bi-moon-stars"
                 class="text-inherit fs-4 me-2"
