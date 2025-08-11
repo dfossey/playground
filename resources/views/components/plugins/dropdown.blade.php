@@ -1,9 +1,10 @@
 @props([
+    'btnClass' => '',
     'dropdownClass' => 'bg-light-secondary',
 ])
 
 <div
-    class="dropdown"
+    class="dropdown {{ $attributes['class'] ?? '' }}"
     x-data="{
         show: false,
         hideTimer: null
@@ -24,7 +25,7 @@
     "
 >
     <button
-        class="btn {{ $attributes['class'] ?? '' }}"
+        class="btn {{ $btnClass }}"
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"

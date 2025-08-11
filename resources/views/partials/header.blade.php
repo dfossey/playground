@@ -1,20 +1,36 @@
-<div class="header px-8 py-2 h-auto justify-content-end">
+<div class="header px-8 py-2 h-auto align-items-center">
+    <div
+        class="btn d-flex d-lg-none bg-hover-light-secondary text-hover-primary
+        w-45px h-45px align-items-center justify-content-center"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sidebarOffcanvas"
+        aria-controls="sidebarOffcanvas"
+    >
+        <x-partials.icon
+            icon="bi-list"
+            class="fs-1 p-0"
+        />
+    </div>
+
     {{-- Theme menu --}}
     <x-plugins.dropdown
-        class="p-4"
+        class="ms-auto"
+        btn-class="w-45px h-45px d-flex align-items-center justify-content-center"
     >
         <x-slot:label>
             <x-partials.icon
                 icon="bi-brightness-high"
-                class="theme-light-show fs-2"
+                class="theme-light-show fs-2 p-0"
             />
             <x-partials.icon
                 icon="bi-moon-stars"
-                class="theme-dark-show fs-2"
+                class="theme-dark-show fs-2 p-0"
             />
         </x-slot:label>
 
         <button
+            type="button"
             class="btn btn-active-light-primary text-start fs-7 py-3 px-4 mb-2 text-gray-600"
             x-on:click="setAppTheme('light')"
         >
@@ -26,6 +42,7 @@
         </button>
 
         <button
+            type="button"
             class="btn btn-active-light-primary text-start fs-7 py-3 px-4 text-gray-600"
             x-on:click="setAppTheme('dark')"
         >

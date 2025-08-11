@@ -35,19 +35,19 @@
     display: none !important;
 }
 
-body[data-kt-aside-minimize=on] {
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
+    body[data-kt-aside-minimize=on] {
         .sidebar-tooltip {
             display: block !important;
         }
-    }
 
-    .sidebar-toggler i {
-        color: var(--bs-primary) !important;
-    }
+        .sidebar-toggler i {
+            color: var(--bs-primary) !important;
+        }
 
-    .sidebar-item .sidebar-label {
-        opacity: 0;
+        .sidebar-item .sidebar-label {
+            opacity: 0;
+        }
     }
 }
 
