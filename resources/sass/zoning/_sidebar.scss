@@ -1,6 +1,38 @@
+.sidebar-item {
+    transition: background-color ease-in-out .1s;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .25rem;
+
+    .sidebar-label {
+        transition: opacity ease-in-out .1s;
+        opacity: 1;
+        margin-left: 1rem;
+        color: var(--bs-gray-600);
+        white-space: nowrap;
+    }
+
+    &:hover {
+        background-color: var(--bs-secondary-light);
+
+        .sidebar-label {
+            color: var(--bs-gray-800);
+        }
+
+        i {
+            color: var(--bs-primary);
+        }
+    }
+}
+
 body[data-kt-aside-minimize=on] {
     .sidebar-toggler i {
         color: var(--bs-primary) !important;
+    }
+
+    .sidebar-item .sidebar-label {
+        opacity: 0;
     }
 }
 

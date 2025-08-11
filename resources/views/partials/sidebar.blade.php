@@ -12,29 +12,53 @@
         </div>
     </div>
 
-    <div class="d-flex flex-column flex-grow-1 p-6 pt-5">
-        <x-plugins.tooltip placement="right" content="Home" class="mb-7">
-            <a href="{{ route('home') }}">
-                <x-partials.icon
-                    icon="bi-grid-1x2"
-                    :class="(Route::is('home') ? 'text-primary' : '') . ' fs-2 text-hover-primary'"
-                />
-            </a>
-        </x-plugins.tooltip>
-        <x-plugins.tooltip placement="right" content="Components" class="mb-7">
-            <a href="https://preview.keenthemes.com/html/craft/docs/base/utilities" target="_blank">
+    <div class="d-flex flex-column flex-grow-1 p-6 ps-2 pt-5">
+        @for($i = 1; $i <= 20; $i++)
+            <x-plugins.tooltip
+                placement="right"
+                content="Home"
+            >
+                <a href="{{ route('home') }}" class="sidebar-item">
+                    <x-partials.icon
+                        icon="bi-grid-1x2"
+                        :class="($i === 1 && Route::is('home') ? 'text-primary' : '') . ' fs-2'"
+                    />
+                    <span class="sidebar-label">
+                        My awesome demo label
+                    </span>
+                </a>
+            </x-plugins.tooltip>
+        @endfor
+
+        <div class="mt-auto"><div class="separator my-10"></div></div>
+
+        <x-plugins.tooltip
+            placement="right"
+            content="Components"
+        >
+            <a href="https://preview.keenthemes.com/html/craft/docs/base/utilities" target="_blank" class="sidebar-item">
                 <x-partials.icon
                     icon="bi-columns-gap"
-                    class="fs-2 text-hover-primary"
+                    class="fs-2"
                 />
+                <span class="sidebar-label">
+                    Demo&nbsp;preview
+                </span>
             </a>
         </x-plugins.tooltip>
-        <x-plugins.tooltip placement="right" content="Demo">
-            <a href="https://preview.keenthemes.com/craft/index.html" target="_blank">
+
+        <x-plugins.tooltip
+            placement="right"
+            content="Demo"
+        >
+            <a href="https://preview.keenthemes.com/craft/index.html" target="_blank" class="sidebar-item">
                 <x-partials.icon
                     icon="bi-layout-sidebar"
-                    class="fs-2 text-hover-primary"
+                    class="fs-2"
                 />
+                <span class="sidebar-label">
+                    Craft&nbsp;components
+                </span>
             </a>
         </x-plugins.tooltip>
     </div>
