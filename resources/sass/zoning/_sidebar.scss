@@ -6,7 +6,7 @@
     border-radius: .25rem;
 
     .sidebar-label {
-        transition: opacity ease-in-out .1s;
+        transition: opacity ease-in-out .2s;
         opacity: 1;
         margin-left: 1rem;
         color: var(--bs-gray-600);
@@ -36,7 +36,18 @@
 }
 
 @media (min-width: 992px) {
-    body[data-kt-aside-minimize=on] {
+    .sidebar-content {
+        transition: max-width ease-in-out .2s;
+        overflow-x: hidden;
+        max-width: 280px;
+    }
+
+    [data-kt-aside-minimize=on] {
+        .aside.aside-default {
+            width: 70px;
+            transition: width .2s ease-in-out;
+        }
+
         .sidebar-content {
             max-width: 70px;
             overflow-x: clip;
@@ -53,12 +64,5 @@
         .sidebar-item .sidebar-label {
             opacity: 0;
         }
-    }
-}
-
-@media (min-width: 992px) {
-    [data-kt-aside-minimize=on] .aside.aside-default {
-        width: 70px;
-        transition: width .3s ease;
     }
 }
