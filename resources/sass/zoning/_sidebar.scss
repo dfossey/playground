@@ -13,7 +13,8 @@
         white-space: nowrap;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
         background-color: var(--bs-secondary-light);
 
         .sidebar-label {
@@ -23,6 +24,10 @@
         i {
             color: var(--bs-primary);
         }
+    }
+
+    &.active {
+        font-weight: 600;
     }
 }
 

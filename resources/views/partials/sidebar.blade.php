@@ -19,10 +19,10 @@
                 content="My awesome demo label"
                 tooltip-class="sidebar-tooltip"
             >
-                <a href="{{ route('home') }}" class="sidebar-item">
+                <a href="{{ route('home') }}" class="sidebar-item {{ $i === 1 && Route::is('home') ? 'active' : '' }}">
                     <x-partials.icon
                         icon="bi-grid-1x2"
-                        :class="($i === 1 && Route::is('home') ? 'text-primary' : '') . ' fs-2'"
+                        class="fs-2"
                     />
                     <span class="sidebar-label">
                         My awesome demo label
