@@ -1,4 +1,4 @@
-<div class="aside aside-default overflow-clip d-block">
+<div class="aside aside-default overflow-clip d-flex">
     <div class="aside-logo flex-column-auto p-lg-5 pt-lg-7 h-auto">
         <div
             class="btn btn-icon w-auto ps-0 btn-active-color-primary d-none d-lg-inline-flex h-auto sidebar-toggler"
@@ -13,7 +13,7 @@
     </div>
 
     <div
-        class="offcanvas-lg offcanvas-start"
+        class="offcanvas-lg offcanvas-start d-flex flex-column flex-grow-1"
         tabindex="-1"
         id="sidebarOffcanvas"
         aria-labelledby="sidebar_mobile"
@@ -32,8 +32,8 @@
             ></button>
         </div>
 
-        <div class="offcanvas-body p-2">
-            <div class="sidebar-content d-flex flex-column flex-grow-1 p-6 ps-2 pt-5">
+        <div class="offcanvas-body p-2 d-flex flex-column flex-grow-1">
+            <div class="sidebar-content d-flex flex-column flex-grow-1 p-6 ps-2 pt-5 pt-lg-0">
                 @for($i = 1; $i <= 20; $i++)
                     <x-plugins.tooltip
                         placement="right"
@@ -52,7 +52,7 @@
                     </x-plugins.tooltip>
                 @endfor
 
-                <div class="mt-auto"><div class="separator my-6 mx-4"></div></div>
+                <div><div class="separator my-6 mx-4"></div></div>
 
                 <x-plugins.tooltip
                     placement="right"
