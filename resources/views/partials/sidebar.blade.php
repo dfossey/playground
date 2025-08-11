@@ -16,7 +16,8 @@
         @for($i = 1; $i <= 20; $i++)
             <x-plugins.tooltip
                 placement="right"
-                content="Home"
+                content="My awesome demo label"
+                tooltip-class="sidebar-tooltip"
             >
                 <a href="{{ route('home') }}" class="sidebar-item">
                     <x-partials.icon
@@ -30,11 +31,12 @@
             </x-plugins.tooltip>
         @endfor
 
-        <div class="mt-auto"><div class="separator my-10"></div></div>
+        <div class="mt-auto"><div class="separator my-6 mx-4"></div></div>
 
         <x-plugins.tooltip
             placement="right"
-            content="Components"
+            content="Demo preview"
+            tooltip-class="sidebar-tooltip"
         >
             <a href="https://preview.keenthemes.com/html/craft/docs/base/utilities" target="_blank" class="sidebar-item">
                 <x-partials.icon
@@ -42,14 +44,15 @@
                     class="fs-2"
                 />
                 <span class="sidebar-label">
-                    Demo&nbsp;preview
+                    Demo preview
                 </span>
             </a>
         </x-plugins.tooltip>
 
         <x-plugins.tooltip
             placement="right"
-            content="Demo"
+            content="Craft components"
+            tooltip-class="sidebar-tooltip"
         >
             <a href="https://preview.keenthemes.com/craft/index.html" target="_blank" class="sidebar-item">
                 <x-partials.icon
@@ -57,7 +60,7 @@
                     class="fs-2"
                 />
                 <span class="sidebar-label">
-                    Craft&nbsp;components
+                    Craft components
                 </span>
             </a>
         </x-plugins.tooltip>

@@ -26,7 +26,17 @@
     }
 }
 
+.sidebar-tooltip {
+    display: none !important;
+}
+
 body[data-kt-aside-minimize=on] {
+    @media (min-width: 992px) {
+        .sidebar-tooltip {
+            display: block !important;
+        }
+    }
+
     .sidebar-toggler i {
         color: var(--bs-primary) !important;
     }
