@@ -10,6 +10,9 @@
 
 @use 'base/font';
 @use 'base/overflow';
+@use 'base/text';
+
+@use 'plugins/dropdown';
 
 
 @media (min-width: 992px) {

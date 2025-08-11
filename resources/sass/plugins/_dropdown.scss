@@ -1,0 +1,12 @@
+.dropdown {
+    button.show,
+    button.showed,
+    button:hover {
+        background-color: var(--bs-secondary-light) !important;
+        color: var(--bs-primary) !important;
+
+        i {
+            color: var(--bs-primary) !important;
+        }
+    }
+}

@@ -36,7 +36,7 @@
     >
         @include('partials.sidebar')
 
-        <div class="wrapper d-flex flex-column flex-row-fluid">
+        <div class="wrapper d-flex flex-column flex-row-fluid pe-lg-8">
             @include('partials.header')
 
             <div class="content d-flex flex-column flex-column-fluid mb-0">
