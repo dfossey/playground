@@ -10,9 +10,7 @@
     {{ $attributes->whereStartsWith(['style', 'class']) }}
     @if ($placement) data-bs-placement="{{ $placement }}" @endif
     @if ($tooltipClass) data-bs-custom-class="{{ $tooltipClass }}" @endif
-    x-init="window.addEventListener('load',
-        () => typeof bootstrap !== 'undefined' && bootstrap.Tooltip.getOrCreateInstance($el)
-    )"
+    x-init="$nextTick(() => typeof bootstrap !== 'undefined' && bootstrap.Tooltip.getOrCreateInstance($el))"
     wire:ignore.self
 >
     {{ $slot }}
