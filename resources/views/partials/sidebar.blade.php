@@ -33,7 +33,7 @@
         </div>
 
         <div class="offcanvas-body p-2">
-            <div class="d-flex flex-column flex-grow-1 p-6 ps-2 pt-5">
+            <div class="sidebar-content d-flex flex-column flex-grow-1 p-6 ps-2 pt-5">
                 @for($i = 1; $i <= 20; $i++)
                     <x-plugins.tooltip
                         placement="right"
