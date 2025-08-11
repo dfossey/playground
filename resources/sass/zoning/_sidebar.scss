@@ -1,0 +1,12 @@
+body[data-kt-aside-minimize=on] {
+    .sidebar-toggler i {
+        color: var(--bs-primary) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    [data-kt-aside-minimize=on] .aside.aside-default {
+        width: 70px;
+        transition: width .3s ease;
+    }
+}

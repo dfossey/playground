@@ -30,9 +30,7 @@
 
     <body
         class="d-flex flex-row"
-        @if (($_COOKIE['data-kt-aside-minimize'] ?? null) === 'on')
-            data-kt-aside-minimize="on"
-        @endif
+        data-kt-aside-minimize="{{ $_COOKIE['data-kt-aside-minimize'] ?? 'off' }}"
     >
         @include('partials.sidebar')
 
@@ -46,8 +44,6 @@
             @include('partials.footer')
         </div>
 
-        {{-- <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script> --}}
-        {{-- <script src="{{ asset('assets/js/plugins.bundle.js') }}"></script> --}}
         @vite(['resources/js/app.js'])
         @livewireScriptConfig
         @stack('scripts')

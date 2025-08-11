@@ -14,10 +14,4 @@
 
 @use 'plugins/dropdown';
 
-
-@media (min-width: 992px) {
-    [data-kt-aside-minimize=on] .aside.aside-default {
-        width: 85px;
-        transition: width .3s ease;
-    }
-}
+@use 'zoning/sidebar';
