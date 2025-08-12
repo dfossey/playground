@@ -55,5 +55,22 @@
                 @endif
             </x-partials.card>
         @endforeach
+
+        <x-partials.card class-body="pt-4">
+            <x-plugins.tabs>
+                <x-slot name="tab_1" title="Tab 1">
+                    Tab 1: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, perspiciatis eos! Nostrum animi fugit doloribus praesentium quo sunt, dolore sed!
+                </x-slot>
+                <x-slot name="tab_2" title="Tab 2">
+                    Tab 2: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, perspiciatis eos! Nostrum animi fugit doloribus praesentium quo sunt, dolore sed!
+                </x-slot>
+                <x-slot name="tab_3" title="Tab 3">
+                    Tab 3: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, perspiciatis eos! Nostrum animi fugit doloribus praesentium quo sunt, dolore sed!
+                </x-slot>
+                <x-slot name="tab_4" title="Tab 4">
+                    Tab 4: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, perspiciatis eos! Nostrum animi fugit doloribus praesentium quo sunt, dolore sed!
+                </x-slot>
+            </x-plugins.tabs>
+        </x-partials.card>
     </div>
 </x-layouts.app>

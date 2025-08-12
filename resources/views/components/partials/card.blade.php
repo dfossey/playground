@@ -1,4 +1,5 @@
 @props([
+    'classBody' => '',
     'header' => null,
     'footer' => null,
 ])
@@ -10,7 +11,7 @@
         </div>
     @endif
 
-    <div class="card-body">
+    <div class="card-body {{ $classBody }}">
         {{ $slot }}
     </div>
 
